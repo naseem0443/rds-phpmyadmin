@@ -1,0 +1,20 @@
+sudo vi /etc/phpmyadmin/config.inc.php
+Find these lines in the configuration file.
+
+/*
+ * End of servers configuration
+ */
+Append the below-mentioned code in the configuration file.
+
+$i++;
+$cfg['Servers'][$i]['host'] = 'xxxxx.xxxxxxxxxx.us-ast-1.rds.amazonaws.com';
+$cfg['Servers'][$i]['port'] = '3306';
+$cfg['Servers'][$i]['verbose'] = 'YOUR_SERVER_NAME';
+$cfg['Servers'][$i]['connect_type'] = 'tcp';
+$cfg['Servers'][$i]['extension'] = 'mysql';
+$cfg['Servers'][$i]['compress'] = TRUE;
+
+host m rds ka end point add krna h
+server name p khuch bhi de skte h
+
+sudo service apache2 restart
