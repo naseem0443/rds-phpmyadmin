@@ -1,4 +1,4 @@
-sudo vi /etc/phpmyadmin/config.inc.php
+sudo nano /etc/phpmyadmin/config.inc.php
 Find these lines in the configuration file.
 
 /*
